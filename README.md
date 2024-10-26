@@ -59,11 +59,20 @@ Ensure you have the following installed:
 
 ### Authentication Pages
 
+![login](https://github.com/user-attachments/assets/ebfaa4bf-4982-4ea5-bd12-bfe808eab3a8)
+![register](https://github.com/user-attachments/assets/ebaca5ad-dd57-4d23-ab33-7e4b932a605d)
+![forget](https://github.com/user-attachments/assets/935b5760-394e-4e9f-836f-0f08f1ae4f1e)
+![reset](https://github.com/user-attachments/assets/4c7cc362-8451-4c17-a014-29af737e5170)
+
 ### Employee Management
+![emp1](https://github.com/user-attachments/assets/0224dd64-af46-4c00-bd77-cfddc11235a6)
+![emp2](https://github.com/user-attachments/assets/2f9cfc47-ffdb-4fd2-b6e2-aa566fca40e2)
 
 ### Attendance Tracking
+![attendance](https://github.com/user-attachments/assets/b0c41668-7461-4767-9378-8bf8039eb7e9)
 
 ### Reports Page
+![report](https://github.com/user-attachments/assets/aada30d9-57d1-4872-8ddc-a1da4265a053)
 
 ## License 📄
 

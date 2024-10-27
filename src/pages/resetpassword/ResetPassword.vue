@@ -38,7 +38,8 @@ const resetPassword = async () => {
         await axios.post('/auth/password/reset', {
             token: token.value,
             email: email.value,
-            password: password.value
+            password: password.value,
+            password_confirmation: passwordConfirmation.value
         });
         alert('Password has been reset! You can now log in.');
     } catch (error) {

@@ -7,6 +7,8 @@
             <input v-model="token" placeholder="Reset Token" class="form-input" required type="text"
                 style="display: none;" />
             <input v-model="password" placeholder="New Password" class="form-input" required type="password" />
+            <input v-model="passwordConfirmation" placeholder="Confirm New Password" class="form-input" required
+                type="password" />
             <button type="submit" class="form-button">Reset Password</button>
         </form>
     </div>
@@ -19,6 +21,7 @@ import { useRoute } from 'vue-router';
 
 const email = ref('');
 const password = ref('');
+const passwordConfirmation = ref('');
 const token = ref('');
 const route = useRoute();
 
@@ -26,6 +29,11 @@ email.value = route.query.email || '';
 token.value = route.query.token || '';
 
 const resetPassword = async () => {
+    if (password.value !== passwordConfirmation.value) {
+        alert('Password confirmation does not match.');
+        return;
+    }
+
     try {
         await axios.post('/auth/password/reset', {
             token: token.value,
